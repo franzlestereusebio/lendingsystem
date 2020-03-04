@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9EE6B85F-8078-4309-A3E8-C40D8B264A1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LendingSystem.My.MyApplication</StartupObject>
+    <RootNamespace>LendingSystem</RootNamespace>
+    <AssemblyName>LendingSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LendingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LendingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddLoans.Designer.vb">
+      <DependentUpon>AddLoans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddLoans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPayment.Designer.vb">
+      <DependentUpon>AddPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lendingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lendingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LendingSystemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LendingSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoanForm.Designer.vb">
+      <DependentUpon>LoanForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoanForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModConnection.vb" />
+    <Compile Include="PaymentForm.Designer.vb">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForm.Designer.vb">
+      <DependentUpon>ReportsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBorrower.Designer.vb">
+      <DependentUpon>UpdateBorrower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBorrower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLendingSystem.Designer.vb">
+      <DependentUpon>FormLendingSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLendingSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterBorrower.Designer.vb">
+      <DependentUpon>RegisterBorrower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterBorrower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowersForm.Designer.vb">
+      <DependentUpon>BorrowersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewLoans.Designer.vb">
+      <DependentUpon>ViewLoans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLoans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddLoans.resx">
+      <DependentUpon>AddLoans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPayment.resx">
+      <DependentUpon>AddPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanForm.resx">
+      <DependentUpon>LoanForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLendingSystem.resx">
+      <DependentUpon>FormLendingSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterBorrower.resx">
+      <DependentUpon>RegisterBorrower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowersForm.resx">
+      <DependentUpon>BorrowersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForm.resx">
+      <DependentUpon>ReportsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBorrower.resx">
+      <DependentUpon>UpdateBorrower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLoans.resx">
+      <DependentUpon>ViewLoans.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lendingDataSet.xsc">
+      <DependentUpon>lendingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lendingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lendingDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lendingDataSet.xss">
+      <DependentUpon>lendingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LendingSystemDataSet.xsc">
+      <DependentUpon>LendingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LendingSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LendingSystemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LendingSystemDataSet.xss">
+      <DependentUpon>LendingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile-computer-icons-login-user-avatars-thumbnail.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
